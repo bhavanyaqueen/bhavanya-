@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="lenght=device-width, initial-scale=1.0">
+    <title>Tattoo Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BHAVANYA Tattoo Shop</h1>
+        <img src="c:\Users\ADMIN\Downloads\front page 2.jpg"Tattoo Design 1">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our tattoo shop! We specialize in creating stunning and unique tattoo designs.</p>
+         <img src="c:\Users\ADMIN\Downloads\front page (1).jpg"Tattoo Design 1">
+         <img src="c:\Users\ADMIN\Downloads\images (2).jpg"Tattoo design 2">
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <img src="c:\Users\ADMIN\Downloads\download (1).jpg" alt="Tattoo Design 1">
+        <img src="c:\Users\ADMIN\Downloads\images (4).jpg" alt="Tattoo Design 1">
+        <!-- Add images and descriptions of tattoo work here -->
+    </section>
+    
+<!-- ... (previous HTML code) ... -->
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="tattoo-images">
+        <img src="c:\Users\ADMIN\Downloads\download (1).jpg" alt="Tattoo Design 1">
+        <img src="c:\Users\ADMIN\Downloads\images (1) (1).jpg" alt="Tattoo Design 2">
+        <!-- Add more images as needed -->
+    </div>
+</section>
+<section id="about">
+    <h2>About Us</h2>
+    <p>Our tattoo artists are experienced professionals dedicated to providing top-quality tattoos contact 9894332566.</p>
+</section>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Contact us for appointments and inquiries. We're here to help you bring your ideas to life.</p>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+</body>
+</html>
+<!-- ... (remaining HTML code) ... -->
+<style>
+    /* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define the overall styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #350d0d;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #f3f3f3;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    background-color: #a0fadf;
+    padding: 20px;
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #7a0160;
+    color: #fff;
+    padding: 10px;
+}
+/* ... (previous CSS code) ... */
+
+.tattoo-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tattoo-images img {
+    width: 30%; /* Adjust the width as needed */
+    margin: 10px; /* Add spacing between images */
+}
+</style>
+<script> 
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        // Validation example (you can customize this)
+        const name = form.querySelector('input[type="text"]').value;
+        const email = form.querySelector('input[type="email"]').value;
+        const message = form.querySelector('textarea').value;
+
+        if (!name || !email || !message) {
+            alert('Please fill in all fields.');
+        } else {
+            alert('Form submitted successfully!');
+            // You can send the data to a server or perform other actions here
+        }
+    });
+});
+</script>
+<footer>
+    <p>&copy; BHAVANYA Tattoo Shop</p>
+</footer>
